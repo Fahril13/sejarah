@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mindmap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.center img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.branch {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.branch:hover {
+    transform: scale(1.05);
+}
+
+.branch img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.branch h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.branch p {
+    font-size: 14px;
+}
+
+.herodotus {
+    grid-column: 1 / 2;
+}
+
+.ibnu-khaldun {
+    grid-column: 1 / 2;
+}
+
+.collingwood {
+    grid-column: 2 / 3;
+}
+
+.croce {
+    grid-column: 2 / 3;
+}
+
+.yamin {
+    grid-column: 3 / 4;
+}
+
+.kuntowijoyo {
+    grid-column: 3 / 4;
+}
